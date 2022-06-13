@@ -1,0 +1,77 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch atividade7",
+            "request": "launch",
+            "mainClass": "lista6.atividade7",
+            "projectName": "lista6"
+        },
+        {
+            "type": "java",
+            "name": "Launch calculadora",
+            "request": "launch",
+            "mainClass": "lista6.calculadora",
+            "projectName": "lista6"
+        },
+        {
+            "type": "java",
+            "name": "Launch atividade8",
+            "request": "launch",
+            "mainClass": "lista6.atividade8",
+            "projectName": "lista6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch atividade1",
+            "request": "launch",
+            "mainClass": "lista6.atividade1",
+            "projectName": "lista6"
+        },
+        {
+            "type": "java",
+            "name": "Launch atividade2",
+            "request": "launch",
+            "mainClass": "lista6.atividade2",
+            "projectName": "lista6"
+        },
+        {
+            "type": "java",
+            "name": "Launch atividade3",
+            "request": "launch",
+            "mainClass": "lista6.atividade3",
+            "projectName": "lista6"
+        },
+        {
+            "type": "java",
+            "name": "Launch atividade4",
+            "request": "launch",
+            "mainClass": "lista6.atividade4",
+            "projectName": "lista6"
+        },
+        {
+            "type": "java",
+            "name": "Launch atividade5",
+            "request": "launch",
+            "mainClass": "lista6.atividade5",
+            "projectName": "lista6"
+        },
+        {
+            "type": "java",
+            "name": "Launch atividade6",
+            "request": "launch",
+            "mainClass": "lista6.atividade6",
+            "projectName": "lista6"
+        }
+    ]
+}
