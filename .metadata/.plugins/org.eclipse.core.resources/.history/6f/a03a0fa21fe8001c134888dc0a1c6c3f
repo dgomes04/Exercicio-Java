@@ -1,0 +1,19 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class atividade2 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+
+		System.out.println("Digite a frase: ");
+		String palavra = ent.nextLine();
+
+		palavra = palavra.replaceAll("\\s+", "");
+		String[] esp = palavra.split(" ");
+
+		
+		System.out.println(palavra);
+	}
+}	

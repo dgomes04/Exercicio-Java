@@ -1,0 +1,43 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class atividade4 {
+	
+	public static void exibe(StringBuilder frase) {
+		for(int i=frase.length();i>0;i++) {
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		
+		System.out.println("Digite a frase: ");
+		String frase = ent.nextLine();
+		frase.trim();
+		
+		
+		StringBuilder fraseSemEsp = new StringBuilder();
+		
+		for(int i=0;i<frase.length();i++) {
+			if(frase.charAt(i)!=' ') {
+				fraseSemEsp.append(frase.charAt(i));
+			}			
+		}
+		
+		int k=fraseSemEsp.length()-1,verPali=0;
+		
+		for(int i=0;i<fraseSemEsp.length()/2;i++) {
+			if(fraseSemEsp.charAt(i)==fraseSemEsp.charAt(k)) {
+				verPali++;
+			}
+			k--;
+		}
+		
+		if(verPali==fraseSemEsp.length()/2) {
+		System.out.println(verPali);
+		}
+	}
+
+}

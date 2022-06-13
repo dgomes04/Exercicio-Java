@@ -1,0 +1,22 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class atividade5 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		
+		System.out.println("Digite o seu número de telefone: ");
+		String telefone = ent.nextLine();
+		telefone.trim();
+		StringBuilder tel = new StringBuilder(telefone);
+		String[] telTamanho = telefone.split("-");
+		
+		if(telTamanho.length<9) {
+			tel.setCharAt(0,'9');
+		}
+
+	}
+
+}

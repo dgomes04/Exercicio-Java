@@ -1,0 +1,23 @@
+package lista4;
+
+import java.util.Scanner;
+
+public class asdgjbajkg {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int n;
+		double salva=0,fatorial=1,s=1;
+		System.out.println("Digite o valor de N:");
+		n = ent.nextInt();
+		for(int i =1;i<=n;i++) {
+			fatorial*=i;
+			salva+= fatorial;
+			s += 1/salva;
+		}
+		System.out.println(s);
+		ent.close();
+
+	}
+
+}

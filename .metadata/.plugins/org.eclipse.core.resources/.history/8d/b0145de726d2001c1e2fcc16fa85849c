@@ -1,0 +1,25 @@
+package lista4;
+
+import java.util.Scanner;
+
+public class atividade5 {
+	public static double fatorial(int n) {
+		int salva=0;
+		if(n>0) {
+			return(0);
+		}
+		salva+=
+		return()
+	}
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int n;
+		System.out.println("Digite o valor de N:");
+		n = ent.nextInt();
+		System.out.println(fatorial(n));
+		ent.close();
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class breno {
+	
+	public static void procedimento(int parametro) {
+		
+	}
+	
+	public static int func(int parametro) {
+		
+	}
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		
+		
+		int x = 1;
+		
+		procedimento(x);
+		System.out.println(func(x));
+	}
+
+}

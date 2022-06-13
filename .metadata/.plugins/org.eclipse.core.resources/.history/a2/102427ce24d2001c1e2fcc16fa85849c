@@ -1,0 +1,26 @@
+package lista4;
+
+import java.util.Scanner;
+
+public class atividade1 {
+	
+	public static int somaDigitos(int n) {
+		int soma=0;
+		if(n<1) {
+			return n;
+		}
+		
+		soma += n%10;
+		return(soma+somaDigitos(n%10));
+	}
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int numero;
+		System.out.println("Digite o seu numero: ");
+		numero = ent.nextInt();
+		System.out.println(somaDigitos(numero));
+		ent.close();
+	}
+
+}

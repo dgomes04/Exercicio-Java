@@ -1,0 +1,26 @@
+package lista4;
+
+import java.util.Scanner;
+
+public class atividade4 {
+	
+	public static int mod(int x, int y) {
+		if(x<y) {
+			return(x);
+		}
+		return(mod(x-y,x));
+	}
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int x,y;
+		System.out.println("Digite o valor de X:");
+		x = ent.nextInt();
+		
+		System.out.println("Digite o valor de Y:");
+		y = ent.nextInt();
+		System.out.println(mod(x,y));
+
+	}
+
+}

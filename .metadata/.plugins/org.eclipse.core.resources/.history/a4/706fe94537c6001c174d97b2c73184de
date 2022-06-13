@@ -1,0 +1,13 @@
+package lista2;
+
+import java.util.Scanner;
+
+public class teste2 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int valores,valoresPositivos = 0,valoresNegativos = 0,valoresNeutros = 0;
+
+	}
+
+}

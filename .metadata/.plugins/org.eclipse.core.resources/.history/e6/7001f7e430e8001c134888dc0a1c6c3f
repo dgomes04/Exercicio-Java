@@ -1,0 +1,25 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class atividade3 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		
+		
+		System.out.println("Digite sua data de nascimento: ");
+		String data = ent.nextLine();
+		data.trim();
+		
+		String[] dividido = data.split("/");
+		String meses = "janeiro fevereiro março abril maio junho julho agosto setembro outubro novembro dezembro";
+		
+		
+		
+		for(int i=0;i<data)
+		
+		System.out.println(data.split("/")[0]+" de"+ meses[data.split("/")[1]-1]);
+	
+	}
+}

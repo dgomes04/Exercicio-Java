@@ -1,0 +1,21 @@
+package lista2;
+
+import java.util.Scanner;
+
+public class atividade4 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int l, ver;
+		
+		System.out.println("Digite o número da série de Fibonacci:");
+		l = ent.nextInt();
+		
+		for(ver = 0; ver<= l; ver++) {
+			System.out.println(ver);
+		
+		}
+
+	}
+
+}

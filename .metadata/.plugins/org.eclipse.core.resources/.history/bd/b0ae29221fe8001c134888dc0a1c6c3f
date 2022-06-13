@@ -1,0 +1,39 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class atividade2 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		/*
+		System.out.println("Digite a frase: ");
+		String palavra = ent.nextLine();
+		
+		
+		String[] esp = palavra.split(" ");
+		
+		for(int i=0;i<palavra.length();i++) {
+			if(esp.contains(palavra(i))) {
+				palavra.split();
+			}
+		}
+		*/
+		System.out.print("Digite um texto: ");
+	    String palavra = ent.nextLine();
+	    
+	    String [] palavras = palavra.split(" ");
+    	palavra= "";
+
+
+	    for(int i = 0; i < palavras.length; i++)
+	   {
+	// texto += palavras[i].concat(" ");
+	palavra += palavras[i];
+	palavra += " ";
+	}
+		
+
+	}
+
+}

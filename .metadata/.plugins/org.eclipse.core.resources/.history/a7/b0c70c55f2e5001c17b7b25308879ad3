@@ -1,0 +1,52 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class atividade1 {
+	
+	public static void exibe(char[]iniciais) {
+		for(int i=0;i<iniciais.length;i++) {
+			System.out.print(iniciais[i]);
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner ent  = new Scanner(System.in);
+		
+		int tamanhoVet=1;
+		int k=1;
+		String maiuscula;
+		String nome;
+		System.out.println("Digite o seu nome:" );
+		nome = ent.nextLine();
+		
+		maiuscula = nome.toUpperCase();
+				
+		String [] blablabla = nome.split("\\s+");
+		
+		int  num = blablabla.length;
+		
+		System.out.println(num);
+		
+		
+		for(int i=0;i<nome.length();i++) {
+			if(nome.charAt(i)==' ') {
+				tamanhoVet++;
+			}
+		}	
+		
+		
+		char [] iniciais = new char[tamanhoVet];
+		iniciais[0]= maiuscula.charAt(0);
+		
+		for(int i=0;i<nome.length();i++) {
+			if(nome.charAt(i)==' ') {
+				//if(nome.charAt(i+1)!= 'e' && /*parte dois*/ (nome.charAt(i+1)!= 'd' && nome.charAt(i+2)!='e') && /*terceira parte*/  nome.charAt(i+2) != 'o' && /*parte quatro*/ nome.charAt(i+1))                          
+				iniciais[k++]= maiuscula.charAt(i+1);
+			}
+		}
+		exibe(iniciais);		
+		
+	}
+
+}

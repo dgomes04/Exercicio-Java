@@ -1,0 +1,51 @@
+package lista2;
+
+import java.util.Scanner;
+
+public class teste2 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int valores,valoresPositivos = 0,valoresNegativos = 0,valoresNeutros = 0;
+		char teste,casos,n;
+		
+		
+		
+		
+		
+			System.out.println("Digite a sequencia de valores");
+			valores = ent.nextInt();
+			if(valores>0) {
+				valoresPositivos++;
+				}else if(valores<0) {
+				valoresNegativos++;
+				}else if(valores == 0){
+				valoresNeutros++;
+				}
+		
+			casos = ent.next().charAt(0);
+			switch(casos) {
+			case ',':
+				while(casos == ',') {
+				valores = ent.nextInt();
+				if(valores>0) {
+					valoresPositivos++;
+					}else if(valores<0) {
+					valoresNegativos++;
+					}else if(valores == 0){
+					valoresNeutros++;
+					}
+				casos = ent.next().charAt(0);
+				}
+		
+			}
+			
+	
+		
+		
+		System.out.println("O total de valores positivos é:" + valoresPositivos);
+		System.out.println("O total de valores negativos é:" + valoresNegativos);
+		System.out.println("O total de valores iguais a zero é:" +valoresNeutros);
+	}
+
+}

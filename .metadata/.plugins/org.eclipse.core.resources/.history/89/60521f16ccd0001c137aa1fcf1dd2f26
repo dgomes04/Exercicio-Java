@@ -1,0 +1,24 @@
+package lista4;
+
+import java.util.Scanner;
+
+public class atividade3 {
+	/*public static int resto(int dividendo, int divisor) {
+		
+	}*/
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int dividendo, divisor;
+		
+		System.out.println("Digite o dividendo:");
+		dividendo = ent.nextInt();
+		System.out.println("Digite o divisor:");
+		divisor = ent.nextInt();
+		System.out.println(80%15);
+		//System.out.println(resto(dividendo,divisor));
+		ent.close();
+
+	}
+
+}

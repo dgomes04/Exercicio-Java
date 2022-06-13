@@ -1,0 +1,28 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class atividade6 {
+	
+	public static void proced(int n) {
+		if(n==1) {
+			for(int i=0;i<n;i++) {
+				System.out.print("*");
+			}
+		}else {			
+			
+				System.out.println("*");
+			
+			System.out.println();
+			proced(n-1);
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int  n =5;
+
+		proced(n);
+	}
+
+}

@@ -1,0 +1,28 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class atividade2 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+
+		System.out.print("Digite a frase: ");
+		String palavra = ent.nextLine();
+		
+		
+		StringBuilder palavraT = new StringBuilder(palavra);
+		
+		
+		String[] teste = palavra.split(" ");
+		
+		for(int i=0;i<teste.length;i++) {
+			if(palavra.charAt(i)==' '+' ') {
+				palavraT.deleteCharAt(i);
+			};
+		}
+		System.out.println(palavraT);
+		
+		ent.close();
+	}
+}	

@@ -1,0 +1,27 @@
+package lista4;
+
+import java.util.Scanner;
+
+public class atividade2 {
+	public static int div(int a,int b) {
+		if(a==b) {
+			return 1;
+		}
+		int soma=0;
+		
+		soma+= a-b;
+		return(div(soma,b));
+	}
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int num1, num2;
+		System.out.println("Digite o primeiro número: ");
+		num1 = ent.nextInt();
+		System.out.println("Digite o segundo número: ");
+		num2 = ent.nextInt();
+		System.out.println(div(num1,num2));
+		ent.close();
+	}
+
+}

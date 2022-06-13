@@ -1,0 +1,50 @@
+package lista2;
+
+import java.util.Scanner;
+
+public class atividade_1 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		int valores,valoresPositivos = 0,valoresNegativos = 0,valoresNeutros = 0;
+		char parar;
+		
+
+		System.out.println("Para começar o código digite s e para parar digite n:");
+		parar = ent.next().charAt(0);
+		
+		while(parar == 's') {			
+		switch(parar) {
+		case 's':
+			
+			System.out.println("Digite a primeira sequencia de valores:");
+			valores = ent.nextInt();
+			
+			if(valores>0) {
+			valoresPositivos++;
+		}else if(valores<0) {
+			valoresNegativos++;
+		}else if(valores == 0){
+			valoresNeutros++;
+		}			
+			break;
+		case 'n':
+			parar = 'n';
+			break;
+		default:
+			System.out.println("Valor inválido");
+			break;
+		}
+		if(parar == 's') {
+		System.out.println("Para começar o código digite s e para parar digite n:");
+			parar = ent.next().charAt(0);
+		}
+		
+		
+		
+		}System.out.println("O total de valores positivos é:" + valoresPositivos);
+		System.out.println("O total de valores negativos é:" + valoresNegativos);
+		System.out.println("O total de valores iguais a zero é:" +valoresNeutros);
+	}
+
+}

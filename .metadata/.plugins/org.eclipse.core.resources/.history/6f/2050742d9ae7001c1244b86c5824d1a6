@@ -1,0 +1,60 @@
+package lista6;
+
+import java.util.Scanner;
+
+public class atividade1 {
+
+	public static void exibe(char[]iniciais) {
+		for(int i=0;i<iniciais.length;i++) {
+			System.out.print(iniciais[i]);
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner ent  = new Scanner(System.in);
+
+		int tamanhoVet=1;
+		int k=1;
+		
+		String nome;
+		System.out.println("Digite o seu nome:" );
+		nome = ent.nextLine().toUpperCase();
+
+		
+
+
+
+
+		for(int i=0;i<nome.length();i++) {
+			if(nome.charAt(i)==' ') {
+				tamanhoVet++;
+			}
+		}	
+
+
+		char [] iniciais = new char[tamanhoVet];
+		iniciais[0]= nome.charAt(0);
+
+
+
+		for(int i=0;i<nome.length();i++) {
+			if(nome.charAt(i)==' ')  {
+				//if(nome.contains(" dos ") == true) {
+					iniciais[k++]= nome.charAt(i+1);
+				//}
+			}
+		}	
+
+		exibe(iniciais);		
+
+	}
+
+}
+
+
+/*
+if(nome.charAt(i+1) == 'e' && nome.charAt(i+2) == ' ') {
+	iniciais[k++]= nome.charAt(i+1);
+}else if(nome.charAt(i+1)=='d' && nome.charAt(i+2) == 'o' && nome.charAt(i+3) == 's' && nome.charAt(i+4) == ' ') {	
+	iniciais[k++]= nome.charAt(i+1);
+}*/
